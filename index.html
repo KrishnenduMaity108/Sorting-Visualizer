@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta neme="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="sorting.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Sorting Visualizer</h1>
+      <div class="buttons">
+        <button class="button" id="array" onclick="getRandomNumbers(3)">New array</button>
+        <button class="button" id="bubble" onclick="bubbleSort()">Bubble sort</button>
+        <button class="button" id="selection" onclick="selectionSort()">Selection sort</button>
+        <button class="button" id="insertion" onclick="insertionSort()">Insertion sort</button>
+        <button class="button" id="quick" onclick="doQuicksort()">Quick sort</button>
+        <button class="button" id="merge" 
+          onclick="removeDiv();
+                  removeMargin();
+                  createDiv(2);
+                  doMergeSort(1,50,100)">Merge sort
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <div id="bar-container"></div>
+      <div id="temp-bar-container"></div>
+    </main>
+
+    <footer>
+      <div class="footer-buttons">
+        <button  class="button" id="skip" onclick="skipBack(3)">Skip back</button>
+      </div>
+      <div></div>
+    </footer>
+
+    <script src="sorting.js"></script>
+    <script src="bubble.js"></script>
+    <script src="selection.js"></script>
+    <script src="insertion.js"></script>
+    <script src="quick.js"></script>
+    <script src="merge.js"></script>
+  </body>
+</html>
